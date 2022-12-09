@@ -1,11 +1,14 @@
 <?php
 	class Initialisation {
+		
+		private $direct;
+		
 		function getFileLocation() {
 			$value = "";
 			$value = $_SERVER["REQUEST_URI"];
 			return($value);
 		}
-		function getDirectory() {
+		function getCurrentDirectory() {
 			$dir = "";
 			$getFileLocation = $this->getFileLocation();
 			$countetSlashes = substr_count($getFileLocation,"/")-1;
@@ -21,9 +24,15 @@
 			}
 			return $dir;
 		}
+		function setDirect($dir) {
+			$this->direct = $dir;
+		}
+		function getDirect() {
+			return $this->direct;
+		}
 		function loadBS() {
-			$dir = $this->getDirectory();
-			include_once($dir."/index.php");
+			$this->setDirect($this->getCurrentDirectory());
+			include_once($this->getDirect()."/index.php");
 			$loadBS = new LoadBootStrap();
 			$loadBS->loadBootStrap();
 		}
