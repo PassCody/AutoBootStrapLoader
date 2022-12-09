@@ -1,12 +1,5 @@
 <?php
 	class LoadBootStrap {
-		
-		function getFileLocation() {
-			$value = "";
-			$value = $_SERVER["REQUEST_URI"];
-			return($value);
-		}
-		
 		function loadBootStrap() {
 			$init = new Initialisation();
 			$init->setDirect($init->getCurrentDirectory());
