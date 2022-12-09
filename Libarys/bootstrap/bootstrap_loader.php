@@ -3,16 +3,12 @@
 		function loadFileGeter($param, $direct) {
 			switch ($param) {
 				case "CSS":
-					$this->loadFiles($direct."/".strtolower($param), $param);
+					$this->getFileList($direct."/".strtolower($param), $param);
 				break;
 				case "JS":
-					$this->loadFiles($direct."/".strtolower($param), $param);
+					$this->getFileList($direct."/".strtolower($param), $param);
 				break;
 			}
-		}
-		function loadFiles($dir, $param) {
-			$files = $this->getFileList($dir, $param);
-			print_r($files);
 		}
 		function getFileList($dir, $param) {
 			$dir = $dir;
