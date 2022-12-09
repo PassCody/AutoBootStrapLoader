@@ -11,4 +11,4 @@ Do not edit the index.php and the bootstrap_loader.php. Otherwise you can crash 
 
 
 # About this Repository
-I am the writer for the AutBootStrapLoader "AddIn". I don't work on the BootStrap repository myself. I just want to give BootStrap itself and others the opportunity to integrate the framework into their projects without problems.
+I am the writer for the AutBootStrapLoader "AddIn". I don't work on the BootStrap repository myself. I just want to give BootStrap itself and others the opportunity to integrate the framework into their projects without problems. It is therefore not my intention to sell or otherwise harm the makers of Bootstrap their code as mine.
