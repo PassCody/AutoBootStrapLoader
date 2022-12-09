@@ -7,7 +7,7 @@ The Direcotry "Libarys" needs to be in your main folder of your project/s.
 From here on, you only need to copy the index.php and init.php in your Folders.
 
 # Hint
-Do not edit the index.php and the bootstrap_loader.php. Otherwise you can crash the loader and it won't work any more.
+Do not edit the init.php in the main directory and the index.php and the bootstrap_loader.php in the Libraries/bootstrap directory. Otherwise you can crash the loader and it won't work any more. Build your project in the index.php file in the main directory or include it in to your project/s.
 
 
 # About this Repository
