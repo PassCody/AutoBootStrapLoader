@@ -13,15 +13,12 @@
 			$getFileLocation = $this->getFileLocation();
 			$countetSlashes = substr_count($getFileLocation,"/")-1;
 			
-			if ($getFileLocation === "") {
-				$dir = "./Libarys/bootstrap";
-			}
-			else {
+			if ($getFileLocation !== "") {
 				for ($i = 0; $i < $countetSlashes; $i++) {
 					$dir = $dir."../";
 				}
-				$dir = $dir."./Libarys/bootstrap";
 			}
+			$dir = $dir."./Libarys/bootstrap";
 			return $dir;
 		}
 		function setDirect($dir) {
